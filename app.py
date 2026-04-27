@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import numpy as np
 import librosa
 from tensorflow.keras.models import load_model
